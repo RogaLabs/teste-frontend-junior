@@ -1,0 +1,3 @@
+export class TunesAlbum implements Album {
+  // Code here...
+}

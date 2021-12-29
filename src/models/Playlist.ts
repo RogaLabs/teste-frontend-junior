@@ -1,0 +1,3 @@
+export class TunesPlaylist implements Playlist {
+  // Code here...
+}
