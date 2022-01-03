@@ -1,3 +1,3 @@
-export class TunesPlayer implements Player {
+export class Player implements PlayerType {
   // Code here...
 }

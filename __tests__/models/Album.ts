@@ -1,11 +1,11 @@
-import albumData from '@/albums.json';
-import { TunesAlbum } from '~/models/Album';
+import albums from '@/albums.json';
+import { Album } from '~/models/Album';
 
 describe('Album', function () {
-  let album: Album;
+  let album: AlbumType;
 
   beforeEach(function () {
-    album = new TunesAlbum(albumData[0]);
+    album = new Album(albums[0]);
   });
 
   it('Initialize correctly', function () {
@@ -34,7 +34,7 @@ describe('Album', function () {
 
   describe('Get url from index', function () {
     it('Returns URL for existing track', function () {
-      expect(album.getUrlFromIndex(0)).toEqual(albumData[0].tracks[0].url);
+      expect(album.getUrlFromIndex(0)).toEqual(albums[0].tracks[0].url);
     });
 
     it('Returns null for non-existing track', function () {

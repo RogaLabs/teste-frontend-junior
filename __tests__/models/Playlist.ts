@@ -1,11 +1,11 @@
 import albumData from '@/albums.json';
-import { TunesPlaylist } from '~/models/Playlist';
+import { Playlist } from '~/models/Playlist';
 
 describe('Playlist', function () {
-  let playlist: TunesPlaylist;
+  let playlist: PlaylistType;
 
   beforeEach(function () {
-    playlist = new TunesPlaylist();
+    playlist = new Playlist();
     playlist.addAlbum(albumData[0]);
   });
 

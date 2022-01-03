@@ -1,12 +1,12 @@
-import albumData from '@/albums.json';
-import { TunesPlayer } from '~/models/Player';
+import albums from '@/albums.json';
+import { Player } from '~/models/Player';
 
 describe('Player', function () {
-  let player: TunesPlayer;
+  let player: PlayerType;
 
   describe('With no items', function () {
     beforeEach(function () {
-      player = new TunesPlayer();
+      player = new Player();
     });
 
     it('Starts with album 0', function () {
@@ -20,8 +20,8 @@ describe('Player', function () {
 
   describe('With added album', function () {
     beforeEach(function () {
-      player = new TunesPlayer();
-      player.playlist.addAlbum(albumData[0]);
+      player = new Player();
+      player.playlist.addAlbum(albums[0]);
     });
 
     it('Is paused', function () {
@@ -38,11 +38,11 @@ describe('Player', function () {
       });
 
       it('Has a current album', function () {
-        expect(player.album.title).toEqual(albumData[0].title);
+        expect(player.album?.title).toEqual(albums[0].title);
       });
 
       it('Has a current track URL', function () {
-        expect(player.trackUrl).toEqual(albumData[0].tracks[0].url);
+        expect(player.trackUrl).toEqual(albums[0].tracks[0].url);
       });
 
       it('Pauses', function () {
@@ -50,12 +50,12 @@ describe('Player', function () {
         expect(player.playing).toBeFalsy();
       });
 
-      describe('Selecting a track', function () {
+      describe('Updating indexes', function () {
         beforeEach(function () {
-          player.playlist.addAlbum(albumData[1]);
+          player.playlist.addAlbum(albums[1]);
         });
 
-        it('Update valid index', function () {
+        it('Should update with a valid index', function () {
           player.albumIndex = 1;
           player.trackIndex = 0;
 
@@ -63,7 +63,7 @@ describe('Player', function () {
           expect(player.trackIndex).toEqual(0);
         });
 
-        it('Skip invalid index', function () {
+        it('Should prevent invalid indexes', function () {
           player.albumIndex = 10;
           player.trackIndex = 10;
 
@@ -74,7 +74,7 @@ describe('Player', function () {
 
       describe('Next track', function () {
         beforeEach(function () {
-          player.playlist.addAlbum(albumData[1]);
+          player.playlist.addAlbum(albums[1]);
         });
 
         it('Increments within an album', function () {
@@ -104,7 +104,7 @@ describe('Player', function () {
 
       describe('Previous track', function () {
         beforeEach(function () {
-          player.playlist.addAlbum(albumData[1]);
+          player.playlist.addAlbum(albums[1]);
         });
 
         it('Goes to the previous track in an album', function () {

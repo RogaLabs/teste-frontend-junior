@@ -13,7 +13,7 @@ interface AlbumData {
   tracks: TrackData[];
 }
 
-interface Album {
+interface AlbumType {
   readonly artist: string;
   readonly title: string;
   readonly tracks: TrackData[];
@@ -24,15 +24,15 @@ interface Album {
 }
 
 interface AlbumCtor {
-  new (data: AlbumData): Album;
+  new (data: AlbumData): AlbumType;
 }
 
 /********************************************************
  * Playlist
  ********************************************************/
 
-interface Playlist {
-  readonly albums: Album[];
+interface PlaylistType {
+  readonly albums: AlbumType[];
 
   addAlbum(data: AlbumData);
   isFirstAlbum(index: number): boolean;
@@ -43,10 +43,10 @@ interface Playlist {
  * Player
  ********************************************************/
 
-interface Player {
-  readonly album: Album | null;
+interface PlayerType {
+  readonly album: AlbumType | null;
   readonly playing: boolean;
-  readonly playlist: Playlist;
+  readonly playlist: PlaylistType;
   readonly trackUrl: string | null;
 
   albumIndex: number;

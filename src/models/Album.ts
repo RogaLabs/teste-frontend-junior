@@ -1,3 +1,3 @@
-export class TunesAlbum implements Album {
+export class Album implements AlbumType {
   // Code here...
 }
