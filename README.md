@@ -1,9 +1,9 @@
 # Music Player
 
-## Requisitos
+## Pré-requisitos
 
-- Node.js v12 ou mais recente
-- Yarn
+- Node.js
+- Yarn (usar `npm` pode causar erros na instalação dos pacotes)
 
 ## Passo 1
 
@@ -16,10 +16,7 @@
 - Criar a interface baseada no [protótipo do Figma](https://www.figma.com/file/V2LUvZCm5AW92nCjtCcM8A/Music-Player?node-id=0%3A1)
 - Fazer a aplicação responsiva utilizando as classes criadas no passo anterior
 - Não utilizar biblioteca de terceiros (apenas vanilla js)
-- Utilizar [Import Maps](https://wicg.github.io/import-maps/) para gerênciar os scripts e estilos do projeto (já configurado no projeto via [es-module-shims](https://github.com/guybedford/es-module-shims))
-  - Adicionar CSS usando [adoptedStyleSheets](https://developers.google.com/web/updates/2019/02/constructable-stylesheets) (ver arquivo `index.js`)
-  - Usar imports relativos (opcional -- ver index.js e index.json)
-- Testar usando os comandos `yarn dev` e `yarn serve`
+- Testar usando os comandos `yarn start`
 
 ## Dicas
 
@@ -29,9 +26,13 @@
 ## O que será avaliado
 
 - Todos os testes cumpridos
+- Responsividade
 - Estrutura do código
+- Gerenciamento de estados (store/state/etc)
 - Uso de boas práticas (legibilidade, código limpo, etc)
+- Funcionalidades adicionais são bem-vindas (use a criatividade)
 
 ## Resultado experado
 
-<img src="./player.png" width=320 />
+<img src="./playing.png" width=320 />
+<img src="./paused.png" width=320 />

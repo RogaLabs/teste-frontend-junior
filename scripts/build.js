@@ -1,6 +1,6 @@
 const esbuild = require('esbuild');
-const copy = require('esbuild-plugin-copy').default;
-const { globPlugin } = require('esbuild-plugin-glob');
+const copy = require('esbuild-copy-static-files');
+const style = require('esbuild-style-plugin');
 
 const args = process.argv.slice(2);
 
@@ -12,17 +12,18 @@ const options = args.reduce((res, arg) => {
   return { ...res, [key]: isBool(val) ? JSON.parse(val) : val };
 }, {});
 
+esbuild.build({
+  outdir: 'build',
+  plugins: [copy({ src: './public', dest: './build', recursive: true })],
+});
+
 esbuild
   .build({
     ...options,
-    entryPoints: ['src/*.ts', 'src/**/*.ts'],
-    entryNames: '[dir]/[name]',
-    outbase: 'src',
-    outdir: 'lib',
+    bundle: true,
+    entryPoints: ['src/index.ts'],
+    outfile: 'build/index.js',
     format: 'esm',
-    plugins: [
-      globPlugin(),
-      copy({ assets: { from: ['./src/*.css'], to: ['.'] } }),
-    ],
+    plugins: [style()],
   })
   .catch(() => process.exit(1));
