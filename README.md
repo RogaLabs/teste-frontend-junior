@@ -13,7 +13,7 @@
 
 ## Passo 2
 
-- Criar a interface baseada no [protótipo do Figma](https://www.figma.com/file/V2LUvZCm5AW92nCjtCcM8A/Music-Player?node-id=0%3A1)
+- Criar a interface baseada no <a href="https://www.figma.com/file/V2LUvZCm5AW92nCjtCcM8A/Music-Player?node-id=0%3A1" target="_blank">protótipo do Figma</a>
 - Fazer a aplicação responsiva utilizando as classes criadas no passo anterior
 - Não utilizar biblioteca de terceiros (apenas vanilla js)
 - Testar usando os comandos `yarn start`
@@ -34,5 +34,4 @@
 
 ## Resultado experado
 
-<img src="./playing.png" width=320 />
-<img src="./paused.png" width=320 />
+<img src="./playing.png" width="320" />
