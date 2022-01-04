@@ -85,7 +85,7 @@ describe('Player', function () {
         });
 
         it('Goes to the next album', function () {
-          player.trackIndex = 1;
+          player.trackIndex = 2;
           player.nextTrack();
 
           expect(player.albumIndex).toEqual(1);
@@ -94,7 +94,7 @@ describe('Player', function () {
 
         it('Goes to the first album if at end', function () {
           player.albumIndex = 1;
-          player.trackIndex = 1;
+          player.trackIndex = 2;
           player.nextTrack();
 
           expect(player.albumIndex).toEqual(0);
@@ -120,14 +120,14 @@ describe('Player', function () {
           player.prevTrack();
 
           expect(player.albumIndex).toEqual(0);
-          expect(player.trackIndex).toEqual(1);
+          expect(player.trackIndex).toEqual(2);
         });
 
         it('Wraps around if at the very beginning', function () {
           player.prevTrack();
 
           expect(player.albumIndex).toEqual(1);
-          expect(player.trackIndex).toEqual(1);
+          expect(player.trackIndex).toEqual(2);
         });
       });
     });

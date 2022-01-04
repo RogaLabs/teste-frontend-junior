@@ -9,7 +9,7 @@ describe('Album', function () {
   });
 
   it('Initialize correctly', function () {
-    expect(album.tracks.length).toEqual(2);
+    expect(album.tracks.length).toEqual(3);
   });
 
   describe('First track', function () {
@@ -24,7 +24,7 @@ describe('Album', function () {
 
   describe('Last track', function () {
     it('Identifies last track', function () {
-      expect(album.isLastTrack(1)).toBeTruthy();
+      expect(album.isLastTrack(2)).toBeTruthy();
     });
 
     it('Rejects non-last track', function () {
