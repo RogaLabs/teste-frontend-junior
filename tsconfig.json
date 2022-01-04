@@ -1,5 +1,5 @@
 {
-  "include": ["@types", "src/**/*.ts"],
+  "include": ["@types", "src"],
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,

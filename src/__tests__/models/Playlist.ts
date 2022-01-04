@@ -1,4 +1,4 @@
-import albumData from '@/albums.json';
+import albums from '@/albums.json';
 import { Playlist } from '~/models/Playlist';
 
 describe('Playlist', function () {
@@ -6,7 +6,7 @@ describe('Playlist', function () {
 
   beforeEach(function () {
     playlist = new Playlist();
-    playlist.addAlbum(albumData[0]);
+    playlist.addAlbum(albums[0]);
   });
 
   it('Initialize correctly', function () {
@@ -22,12 +22,12 @@ describe('Playlist', function () {
   });
 
   it('Identifies last album', function () {
-    playlist.addAlbum(albumData[1]);
+    playlist.addAlbum(albums[1]);
     expect(playlist.isLastAlbum(1)).toBeTruthy();
   });
 
   it('Rejects non-last album', function () {
-    playlist.addAlbum(albumData[1]);
+    playlist.addAlbum(albums[1]);
     expect(playlist.isLastAlbum(0)).toBeFalsy();
   });
 });
