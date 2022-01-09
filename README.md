@@ -2,21 +2,20 @@
 
 ## Pré-requisitos
 
-- Node.js
+- Node.js 16+
 - Yarn (usar `npm` pode causar erros na instalação dos pacotes)
 - Não utilizar nenhuma biblioteca além das que já estão instaladas (seja de CSS ou JS)
 
 ## Passo 1
 
-- Rodar o comando `yarn`
+- Instalar as dependências
 - Ver o teste "quebrar" rodando `yarn test`
-- Escrever as classes para passar nos testes
+- Escrever as classes para passar nos testes (Jest)
 
 ## Passo 2
 
-- Criar a interface baseada no [protótipo do Figma](https://www.figma.com/file/V2LUvZCm5AW92nCjtCcM8A/Music-Player?node-id=0%3A1)
+- Criar a interface baseada no [protótipo do Figma](https://www.figma.com/file/V2LUvZCm5AW92nCjtCcM8A/Music-Player)
 - Fazer a aplicação responsiva utilizando as classes criadas no passo anterior
-- Não utilizar biblioteca de terceiros (apenas vanilla js)
 - Testar usando os comandos `yarn start`
 
 ## Sugestões
@@ -34,7 +33,7 @@
 - Gerenciamento de estados (store/state/etc)
 - Uso de boas práticas (legibilidade, código limpo, etc)
 - Aplicativo funcionando com músicas tocando e faixas sendo trocadas (utilizar o arquivo da pasta `mocks`)
-- Funcionalidades adicionais são bem-vindas (use a criatividade)
+- Funcionalidades adicionais são bem-vindas (use sua criatividade)
 
 ## Resultado experado
 
