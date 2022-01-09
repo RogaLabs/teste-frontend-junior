@@ -4,6 +4,7 @@
 
 - Node.js
 - Yarn (usar `npm` pode causar erros na instalação dos pacotes)
+- Não utilizar nenhuma biblioteca além das que já estão instaladas (seja de CSS ou JS)
 
 ## Passo 1
 
@@ -18,18 +19,21 @@
 - Não utilizar biblioteca de terceiros (apenas vanilla js)
 - Testar usando os comandos `yarn start`
 
-## Dicas
+## Sugestões
 
-- Utilizar os recursos mais novos de JavaScript (ESNext)
-- Encapsular as propriedades das classes (impedir valores inválidos em atribuições diretas)
+- Faça bom uso de variáveis CSS
+- Utilize os recursos mais novos de JavaScript (ESNext)
+- Encapsule as propriedades das classes (impedir valores inválidos em atribuições diretas)
 
 ## O que será avaliado
 
 - Todos os testes cumpridos
+- Fidelidade ao protótipo
 - Responsividade
 - Estrutura do código
 - Gerenciamento de estados (store/state/etc)
 - Uso de boas práticas (legibilidade, código limpo, etc)
+- Aplicativo funcionando com músicas tocando e faixas sendo trocadas (utilizar o arquivo da pasta `mocks`)
 - Funcionalidades adicionais são bem-vindas (use a criatividade)
 
 ## Resultado experado

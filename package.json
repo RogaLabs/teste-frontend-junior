@@ -1,5 +1,5 @@
 {
-  "name": "frontend-test-jr",
+  "name": "teste-frontend-junior",
   "private": true,
   "scripts": {
     "build": "node ./scripts/build.js minify=true",
