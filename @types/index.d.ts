@@ -13,12 +13,14 @@ interface TrackData {
 
 interface AlbumData {
   artist: string;
+  cover: string;
   title: string;
   tracks: TrackData[];
 }
 
 interface AlbumType {
   readonly artist: string;
+  readonly cover: string;
   readonly title: string;
   readonly tracks: TrackData[];
 

@@ -9,7 +9,7 @@
 
 - Instalar as dependências
 - Ver o teste "quebrar" rodando `yarn test`
-- Escrever as classes para passar nos testes (Jest)
+- Escrever as classes para passar nos testes
 
 ## Passo 2
 
@@ -22,6 +22,8 @@
 - Faça bom uso de variáveis CSS
 - Utilize os recursos mais novos de JavaScript (ESNext)
 - Encapsule as propriedades das classes (impedir valores inválidos em atribuições diretas)
+- As imagens necessárias estão na pasta `public/img`
+- A estrutura de pastas atual é apenas uma sugestão, sinta-se livre para modificá-la como achar melhor.
 
 ## O que será avaliado
 
@@ -31,7 +33,7 @@
 - Estrutura do código
 - Gerenciamento de estados (store/state/etc)
 - Uso de boas práticas (legibilidade, código limpo, etc)
-- Aplicativo funcionando com músicas tocando e faixas sendo trocadas (utilizar o arquivo da pasta `mocks`)
+- Aplicativo funcionando com [músicas tocando](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement) e faixas sendo trocadas (utilizar o arquivo da pasta `mocks`)
 - Funcionalidades adicionais são bem-vindas (use sua criatividade)
 
 ## Resultado esperado

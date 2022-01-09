@@ -17,10 +17,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./lib",
-    "paths": {
-      "@/*": ["mocks/*"],
-      "~/*": ["src/*"]
-    },
+    "paths": { "~/*": ["src/*"] },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

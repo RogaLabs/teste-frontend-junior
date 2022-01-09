@@ -1,4 +1,4 @@
-import albums from '@/albums.json';
+import albums from '~/mocks/albums.json';
 import { Player } from '~/models/Player';
 
 describe('Player', function () {
