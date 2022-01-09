@@ -34,6 +34,6 @@
 - Aplicativo funcionando com músicas tocando e faixas sendo trocadas (utilizar o arquivo da pasta `mocks`)
 - Funcionalidades adicionais são bem-vindas (use sua criatividade)
 
-## Resultado experado
+## Resultado esperado
 
 ![Player](./player.png)
