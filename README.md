@@ -3,7 +3,6 @@
 ## Pré-requisitos
 
 - Node.js 16+
-- Yarn (usar `npm` pode causar erros na instalação dos pacotes)
 - Não utilizar nenhuma biblioteca além das que já estão instaladas (seja de CSS ou JS)
 
 ## Passo 1
