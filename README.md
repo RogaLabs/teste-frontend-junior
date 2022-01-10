@@ -23,7 +23,7 @@
 - Utilize os recursos mais novos de JavaScript (ESNext)
 - Encapsule as propriedades das classes (impedir valores inválidos em atribuições diretas)
 - As imagens necessárias estão na pasta `public/img`
-- A estrutura de pastas atual é apenas uma sugestão, sinta-se livre para modificá-la como achar melhor.
+- A estrutura de pastas atual, dentro de `src`, é apenas uma sugestão, sinta-se livre para modificá-la como achar melhor.
 
 ## O que será avaliado
 
