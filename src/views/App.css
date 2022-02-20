@@ -1,3 +1,47 @@
-.App {
-  padding: 1rem;
+.container {
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1.6rem;
+  background-color: white;
+  border: 0.1rem solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.4rem;
+}
+
+.card-header {
+  display: flex;
+}
+
+.card-content {
+  flex-direction: column;
+  margin-left: 1.6rem;
+}
+
+.tracks {
+  padding: 0.8rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
+
+.play-container {
+  width: 100vw;
+  background-color: white;
+  padding: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.clicked {
+  background: rgba(0, 0, 0, 0.15);
 }
