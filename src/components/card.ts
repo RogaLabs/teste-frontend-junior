@@ -10,10 +10,9 @@ export function Card(albums: AlbumData[]) {
             <img src=${value.cover} alt="avatar image" />
             <div class="card-content">
               <h1>
-                Symphony <br />
-                Collection
+              ${value.title.replace(" ", "<br />")}
               </h1>
-              <h2>Ludwig van Beethoven</h2>
+              <h2>${value.artist}</h2>
             </div>
           </div>
         ${Tracks(value.tracks)}
