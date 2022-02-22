@@ -1,4 +1,4 @@
 /**
- * For syntax hightlight only
+ * For syntax highlight only
  */
 export const html = String.raw;
